@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="font-family: 'Playfair Display', serif;">
+<style type="text/css">
+	.btn-chart{
+    background-color:transparent;
+    position:relative;
+}
+.btn-chart .badge{
+    position:absolute;
+    top:-1px;
+    right:-1px;
+}
+.dropdown-menu-right{
+    right:0;
+    left: auto;
+}
+.bg-img{
+    background-image:url('https://cdn.pixabay.com/photo/2016/11/11/18/42/business-1817472_1280.jpg');
+    height: 20px;
+    background-size:cover;
+    background-position:center center;
+    min-height: 400px;
+}
+.bg-lighters{
+    background-color:rgba(255, 255, 255, 0.45);
+}
+.card.box-shadow{
+    box-shadow:0 3px 5px rgba(0,0,0,0.2);
+}
+.card.box-shadow:hover{
+    box-shadow:0 5px 5px rgba(0,0,0,0.4);
+}
+.footDescription{
+    background-color:rgb(225, 225, 225);
+}
+
+
+.alert-rounded{
+    border-radius:40px;
+}
+</style>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Online Store</a>
+    <div class="dropdown ml-auto">
+
+    <img src="https://cdn0.iconfinder.com/data/icons/multimedia-solid-30px/30/cart_shopping_ecommerce_basket-512.png" height="30px">
+        <span class="badge badge-danger">10</span>
+      </button>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="width:320px;">
+        <table class="table">
+          <thead>
+            <tr>
+              <th colspan="4" class="text-center">
+
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a class="text-dark" href="#">
+                  <i class="fa fa-trash-alt"></i>
+                </a>
+              </td>
+              <td>
+              hhh
+              </td>
+              <td>1Pieces</td>
+              <td>$1500</td>
+            </tr>
+            <tr>
+              <td>
+                <a class="text-dark" href="#">
+                  <i class="fa fa-trash-alt"></i>
+                </a>
+              </td>
+              <td>
+                Gold medal suit
+              </td>
+              <td>1Pieces</td>
+              <td>$1500</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">
+                <button class="btn btn-primary btn-block">Checkout</button>
+              </td>
+
+            </tr>
+
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <header>
+    <div class="jumbotron jumbotron-fluid bg-img d-flex">
+      <div class="container align-self-end bg-lighters">
+
+      </div>
+    </div>
+  </header>
+  <!-- section1 -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <!-- List group -->
+          <div class="list-group sticky-top" id="myList" role="tablist">
+            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#pane1"
+              role="tab">Categories</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#pane2" role="tab">Men <img src="https://image.flaticon.com/icons/svg/3048/3048122.svg" height="20px"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#pane3" role="tab">Women <img src="https://www.clipartmax.com/png/full/144-1448651_green-login-icon-women-brown-png-icon.png" height="20px"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#pane4" role="tab">Child <img src="https://www.clipartmax.com/png/full/324-3247660_71727-take-care-of-your-children-parent-child-icon.png" height="20px"></a>
+          </div>
+        </div>
+        <div class="col-lg-9">
+
+
+          <div class="tab-content">
+            <!-- pane1 -->
+            <div class="tab-pane active fade show" id="pane1" role="tabpanel">
+              <div class="row">
+                <div class="col-lg-4 mb-5">
+                  <div class="card h-30 box-shadow">
+                    <img height="250px" src="https://i.pinimg.com/474x/c1/f7/75/c1f77582678c416159668c84a0540f05.jpg" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">T-Shirts</h5>
+
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <div class="btn-group d-flex justify-content-center">
+                        <div class="btn btn-outline-secondary">S</div>
+                        <div class="btn btn-outline-secondary">M</div>
+                        <div class="btn btn-outline-secondary">L</div>
+                      </div>
+
+                    </div>
+   <button class="btn btn-success">Add</button>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 mb-5">
+                  <div class="card h-30 box-shadow">
+                    <img height="250px"
+                      src="https://rukminim1.flixcart.com/image/714/857/jr58l8w0/kurta/q/j/2/xs-sdmdwkt379-see-designs-original-imafctypuh44mycx.jpeg?q=50" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Kurta</h5>
+
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <div class="btn-group d-flex justify-content-center">
+                        <div class="btn btn-outline-secondary">S</div>
+                        <div class="btn btn-outline-secondary">M</div>
+                        <div class="btn btn-outline-secondary">L</div>
+                      </div>
+                    </div>
+                       <button class="btn btn-success">Add</button>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                  <div class="card h-30 box-shadow">
+                    <img height="250px"
+                      src="https://i.pinimg.com/474x/82/c8/72/82c87200cb41f7765517213ffdda05c0.jpg"
+                      class=" card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Blazer</h5>
+
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <div class="btn-group d-flex justify-content-center">
+                        <div class="btn btn-outline-secondary">S</div>
+                        <div class="btn btn-outline-secondary">M</div>
+                        <div class="btn btn-outline-secondary">L</div>
+                      </div>
+                    </div>   <button class="btn btn-success">Add</button>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                  <div class="card h-100 box-shadow">
+                    <img height="250px"
+                      src="https://i.pinimg.com/474x/de/0f/54/de0f54bda3b77b2c4fa17ca12a410b8a.jpg"
+                      class=" card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Flower Dress</h5>
+
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <div class="btn-group d-flex justify-content-center">
+                        <div class="btn btn-outline-secondary">S</div>
+                        <div class="btn btn-outline-secondary">M</div>
+                        <div class="btn btn-outline-secondary">L</div>
+                      </div>
+                    </div>   <button class="btn btn-success">Add</button>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                  <div class="card h-100 box-shadow">
+                    <img height="250px"
+                      src="https://i.pinimg.com/474x/7e/3b/b6/7e3bb65e985007c182839c3e65e3d757.jpg"
+                      class=" card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Frok</h5>
+
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <div class="btn-group d-flex justify-content-center">
+                        <div class="btn btn-outline-secondary">S</div>
+                        <div class="btn btn-outline-secondary">M</div>
+                        <div class="btn btn-outline-secondary">L</div>
+                      </div>
+                    </div>   <button class="btn btn-success">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pane1 end -->
+            <!-- pane2 -->
+
+
+            <div class="tab-pane fade" id="pane2" role="tabpanel">
+              <div class="row">
+                <div class="col-lg-4 mb-5">
+                  <div class="card h-100 box-shadow">
+                    <img height="250px"
+                      src="https://i.pinimg.com/474x/33/5e/1a/335e1ad6ce2dd395face52c5df01d8e4.jpg"
+                      class=" card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Jean</h5>
+
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <div class="btn-group d-flex justify-content-center">
+                        <div class="btn btn-outline-secondary">S</div>
+                        <div class="btn btn-outline-secondary">M</div>
+                        <div class="btn btn-outline-secondary">L</div>
+                      </div>
+                    </div>   <button class="btn btn-primary">Add</button>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                  <div class="card h-100 box-shadow">
+                    <img height="250px"
+                      src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/1700944/2019/6/8/972c9498-3a37-4d5d-976c-4493b4d5c0021559989322793-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Round-Neck-T-Shirt--1.jpg" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">T-shirt</h5>
+
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <div class="btn-group d-flex justify-content-center">
+                        <div class="btn btn-outline-secondary">S</div>
+                        <div class="btn btn-outline-secondary">M</div>
+                        <div class="btn btn-outline-secondary">L</div>
+                      </div>
+                    </div> <button class="btn btn-primary">Add</button>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                  <div class="card h-100 box-shadow">
+                    <img height="250px"
+                      src="https://i.pinimg.com/474x/87/4e/8c/874e8c4946e78f5491518198cd5bf90f.jpg"
+                      class=" card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Shirt</h5>
+
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <div class="btn-group d-flex justify-content-center">
+                        <div class="btn btn-outline-secondary">S</div>
+                        <div class="btn btn-outline-secondary">M</div>
+                        <div class="btn btn-outline-secondary">L</div>
+                      </div>
+                    </div> <button class="btn btn-primary">Add</button>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                  <div class="card h-30 box-shadow">
+                    <img height="250px"
+                      src="https://i.pinimg.com/474x/2a/2a/ca/2a2aca2f9247ad80f5617a51e634217e.jpg"
+                      class=" card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Shoes</h5>
+
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <div class="btn-group d-flex justify-content-center">
+                        <div class="btn btn-outline-secondary">S</div>
+                        <div class="btn btn-outline-secondary">M</div>
+                        <div class="btn btn-outline-secondary">L</div>
+                      </div>
+                    </div> <button class="btn btn-primary">Add</button>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                  <div class="card h-30 box-shadow">
+                    <img height="250px"
+                      src="https://i.pinimg.com/564x/65/89/3f/65893fad6faebadaed2944c13f0ff9ed.jpg"
+                      class=" card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Loafer</h5>
+                     </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <div class="btn-group d-flex justify-content-center">
+                        <div class="btn btn-outline-secondary">S</div>
+                        <div class="btn btn-outline-secondary">M</div>
+                        <div class="btn btn-outline-secondary">L</div>
+                      </div>
+                    </div> <button class="btn btn-primary">Add</button>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                  <div class="card h-30 box-shadow">
+                    <img height="250px"
+                      src="https://i.pinimg.com/474x/ce/ab/33/ceab33a6355a55cf9f5516ef5cf59075.jpg"
+                      class=" card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Watch</h5>
+
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <div class="btn-group d-flex justify-content-center">
+                        <div class="btn btn-outline-secondary">S</div>
+                        <div class="btn btn-outline-secondary">M</div>
+                        <div class="btn btn-outline-secondary">L</div>
+                      </div>
+                    </div> <button class="btn btn-primary">Add</button>
+                  </div> </div>
+              </div>
+            </div>
+            <!-- pane2 end -->
+            <!-- pane3 -->
+
+            <div class="tab-pane fade" id="pane3" role="tabpanel">
+              <div class="row">
+                <div class="col-lg-4 mb-5">
+                  <div class="card h-30 box-shadow">
+                    <img height="250px"
+                      src="https://i.pinimg.com/474x/0c/c8/ad/0cc8ad135514826487149ca5a2c68ff7.jpg"
+                      class=" card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Saree</h5>
+
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <div class="btn-group d-flex justify-content-center">
+                        <div class="btn btn-outline-secondary">S</div>
+                        <div class="btn btn-outline-secondary">M</div>
+                        <div class="btn btn-outline-secondary">L</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                  <div class="card h-30 box-shadow">
+                    <img height="250px"
+                      src="https://i.pinimg.com/474x/4a/75/9b/4a759ba972d6fbd430653ff58632277f.jpg"
+                      class=" card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Kurta</h5>
+
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <div class="btn-group d-flex justify-content-center">
+                        <div class="btn btn-outline-secondary">S</div>
+                        <div class="btn btn-outline-secondary">M</div>
+                        <div class="btn btn-outline-secondary">L</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                  <div class="card h-30 box-shadow">
+                    <img height="250px"
+                      src="https://i.pinimg.com/474x/ca/ff/cf/caffcfd0a13829c16a1ebda73e07dab4.jpg"
+                      class=" card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Watch</h5>
+
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <div class="btn-group d-flex justify-content-center">
+                        <div class="btn btn-outline-secondary">S</div>
+                        <div class="btn btn-outline-secondary">M</div>
+                        <div class="btn btn-outline-secondary">L</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                  <div class="card h-30 box-shadow">
+                    <img height="250px"
+                      src="https://i.pinimg.com/474x/06/30/c3/0630c3cf839b830eb784c3a85c73eed5.jpg"
+                      class=" card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bags</h5>
+
+                    </div>
+                    <div class="card-footer border-top-0 bg-white">
+                      <div class="btn-group d-flex justify-content-center">
+                        <div class="btn btn-outline-secondary">S</div>
+                        <div class="btn btn-outline-secondary">M</div>
+                        <div class="btn btn-outline-secondary">L</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pane3 end -->
+            <!-- pane4 -->
+            <div class="tab-pane fade" id="pane4" role="tabpanel">
+
+            </div>
+            <!-- pane4 end -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+  </section>
+  <!-- section1 end -->
+  <!-- section 2 -->
+  <section class="py-4">
+    <div class="container">
+      <div class="row">
+        <!-- chart -->
+        <div class="col-lg-4">
+          <div class="sticky-top mb-3">
+            <h3 class="d-inline">T shirt</h3>
+
+            <div class="d-flex align-items-end">
+
+              <strong class="h3 mb-0 text-danger">520</strong>
+            </div>
+            <hr>
+            <p></p>
+
+            <div class="d-block mb-3 btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
+							<label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> S
+              </label>
+              <label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> L
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off">M
+              </label>
+            </div>
+
+            <div class=" btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
+
+              <label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> S
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> M
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> L
+              </label>
+            </div>
+            <div class="mt-3 btn btn-primary btn-block">Add to chart</div>
+          </div>
+
+        </div>
+        <!-- chart end -->
+        <div class="col-lg-8">
+          <h3 class="text-center">
+           BLAZER'S
+          </h3>
+          <div class="row mb-4">
+            <div class="col-lg-6">
+              <img height="300px" class=" w-100 mb-3"
+                src="https://i.pinimg.com/474x/3e/5b/dc/3e5bdcb0f5537d968e551beb271dd539.jpg"
+                alt="">
+            </div>
+            <div class="col-lg-6">
+              <img height="300px" class=" w-100 mb-3"
+                src="https://i.pinimg.com/474x/73/90/07/739007fed02bfec33bcd144eef0368c8.jpg"
+                alt="">
+            </div>
+          </div>
+          <h3 class="text-center">Top</h3>
+          <div class="row">
+            <div class="col-lg-6">
+              <img height="350px" class=" w-100 mb-3"
+                src="https://cdn.pixabay.com/photo/2015/09/26/09/08/hipster-958805__480.jpg"
+                alt="">
+            </div>
+            <div class="col-lg-6">
+              <img height="350px" class=" w-100 mb-3"
+                src="https://cdn.pixabay.com/photo/2016/06/29/04/39/wedding-dresses-1486004__480.jpg"
+                alt="">
+            </div>
+            <div class="col-lg-12 mb-4 text-center">
+              <h3>Store</h3>
+              <img width="100%"
+                src="https://cdn.pixabay.com/photo/2015/10/12/15/18/store-984393__480.jpg"
+                alt="">
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <hr>
+  <!-- section2 end -->
+  <!-- section3 -->
+  <section class="my-3">
+    <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="card">
+            <div class="card-header d-flex" id="headingOne">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                <h6 class="m-0">
+                  Check Out
+                </h6>
+              </button>
+            </div>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th width="50"></th>
+                  <th width="60%">Dress</th>
+                  <th>Price</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="align-middle">
+                    <img width="64px" height="64px"
+                      src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                      alt="">
+                  </td>
+                  <td class="align-middle">Top</td>
+                  <td class="align-middle">Price</td>
+                  <td class="align-middle text-right">$520</td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="text-right">Price</td>
+                  <td class="text-right">$60</td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="text-right">Price</td>
+                  <td class="text-right">$580</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- form -->
+          <div class="text-center py-3 h4 bg-light">Payment Info.</div>
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Name</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Name" required>
+                <div class="invalid-feedback">
+
+                </div>
+              </div>
+
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Email Id</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Email id" required>
+              <div class="invalid-feedback">
+               Email
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Address">
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="inputCity">States</label>
+                <input type="text" class="form-control" id="inputCity" required>
+                <div class="invalid-feedback">
+                  City
+                </div>
+              </div>
+              <div class="form-group col">
+                <label for="inputState">City</label>
+                <select id="inputState" class="form-control" required>
+                  <option selected>Choose...</option>
+                  <option>India</option>
+                  <option>Dhar</option>
+                  <option>Bhopal</option>
+                </select>
+              </div>
+              <div class="form-group col">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip" required>
+                <div class="invalid-feedback">
+                 Postal
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end ">
+              <button class="btn btn-secondary mr-1">Cancel</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+          <!-- form end -->
+          <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+              'use strict';
+              window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                  form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <!-- section3 end-->
+  <!-- section4 -->
+
+  <!-- footer -->
+  <footer class="py-5 bg-light">
+    <div class="container">
+      <ul class="d-flex justify-content-center pl-0" style="list-style:none;">
+        <li class="mr-2">© Lakshmi Narayanan Copright 2020</li>
+        <li class="mr-2">
+          <a class="text-info" href="#">Instagrame</a>
+        </li>
+        <li class="mr-2">
+          <a class="text-info" href="#">Facebook</a>
+        </li>
+        <li class="mr-2">
+          <a class="text-info" href="#">About</a>
+        </li>
+      </ul>
+      <div class=" mt-4 text-secondary d-flex justify-content-center">
+        <div>
+          LAKSHMI NARAYANAN
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer  end-->
+  <!-- bootstrap js -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $('#removeModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget)
+        var title = button.data('title')
+
+        var modal = $(this)
+        modal.find('.modal-title').text('confirm' + title)
+      })
+    });
+  </script>
+
+</body>
+</html>
